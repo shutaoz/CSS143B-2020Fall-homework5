@@ -26,10 +26,8 @@ public class InOrderTraverse {
                 stack.push(current.right);
             }
 
-            // Push root
             stack.push(current);
 
-            // Push left
             if(current.left != null) {
                 stack.push(current.left);
             }

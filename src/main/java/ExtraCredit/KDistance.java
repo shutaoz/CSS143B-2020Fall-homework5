@@ -5,7 +5,7 @@ import Problem1.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.*;
-//I got the idea for this from https://www.geeksforgeeks.org/print-nodes-distance-k-given-node-binary-tree/solution
+//I got the idea for this from https://www.geeksforgeeks.org/print-nodes-distance-k-given-node-binary-tree
 
 public class KDistance {
     public static List<Integer> distanceK(TreeNode<Integer> root, TreeNode<Integer> target, int val) {
