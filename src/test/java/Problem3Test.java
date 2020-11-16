@@ -36,6 +36,15 @@ public class Problem3Test {
     public void testInOrderTraverse() {
         // homework
         // to verify inOrderTraverse(TreeNode<Integer> node)
+        List<BSTTestCase<Integer>> testCases = new ArrayList<>();
+        TreeNode<Integer> root = new TreeNode<>(2);
+        root.left = new TreeNode<>(1);
+        root.right = new TreeNode<>(5);
+        testCases.add(new BSTTestCase<>(root, 7, Arrays.asList(1, 2, 5, 7)));
+
+
+        assertEquals(testCases.get(0).expect, testCases.get(0).expect);
+
     }
 
     private static List<Integer> inOrderTraverse(TreeNode<Integer> node) {
@@ -146,9 +155,9 @@ public class Problem3Test {
         //    N   N
         // homework
         // what problem can you see for insertInBst from this test case?
-        // answer:
+        // answer: The tree will only have one sub branch that points to the right since all the numbers entered is in an ascending order, and a tree with this shape can slow down the search speed.
         // discuss how you would solve it in a comment below
-        // answer:
+        // answer: Making sure that the data entered when adding are not in a sorted order.
         root = new TreeNode<>(1);
         testCases.add(new BSTTestCase<>(root, 2, Arrays.asList(1, 2)));
         testCases.add(new BSTTestCase<>(root, 3, Arrays.asList(1, 2, 3)));
