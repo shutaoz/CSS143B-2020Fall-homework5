@@ -21,7 +21,7 @@ public class InOrderTraverse {
                 continue;
             }
 
-            // Push right
+
             if(current.right != null) {
                 stack.push(current.right);
             }
